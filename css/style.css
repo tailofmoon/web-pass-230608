@@ -21,9 +21,11 @@ body {
     display: flex;
 }
 
-aside {
+header {
     background: #ddd;
     width: 20%;
+    padding: 20px;
+    padding-top: 40px;
 }
 
 .main {
@@ -44,4 +46,8 @@ aside {
 footer {
     background: yellow;
     height: 100px;
+}
+
+header .logo {
+    width: 100%;
 }

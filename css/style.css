@@ -97,3 +97,8 @@ header nav .depth2 {
 header nav .depth2.active {
     display: block;
 }
+
+/* 메뉴 버튼 트렌지션 효과 */
+header nav a {
+    transition-duration: 0.4s;
+}

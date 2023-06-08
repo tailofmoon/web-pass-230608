@@ -7,7 +7,10 @@
 
 ul { list-style-type: none; }
 
-a { text-decoration: none;}
+a { 
+    text-decoration: none;
+    color: #222328;
+}
 
 body {
     background-color: #fff;
@@ -50,4 +53,47 @@ footer {
 
 header .logo {
     width: 100%;
+}
+
+/* 메인메뉴 */
+header nav .depth1 > li {
+    border: 1px solid red;
+    /* 부모 위치 선언(depth2의 위치 기준) */
+    position: relative;
+}
+
+header nav .depth1 > li > a {
+    font-weight: bold;
+}
+
+/* hover되면 글자 색상 효과 주기 */
+header nav .depth1 > li > a:hover {
+    color: #ab0000;
+}
+
+/* 2단계 메뉴 효과(반전효과) */
+header nav .depth2 > li > a:hover {
+    background-color: #ab0000;
+    color: #fff;
+}
+
+header nav .depth2 > li > a {
+    display: block;
+    padding: 5px;
+    color: #fff;
+}
+
+/* 2단계 메뉴 위치 조정 */
+header nav .depth2 {
+    background: #555;
+    position: absolute;
+    width: 100%;
+    left: 160px;
+    top: 0;
+    display: none;
+}
+
+/* 마우스가 올라갈때 상태 */
+header nav .depth2.active {
+    display: block;
 }

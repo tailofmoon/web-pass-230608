@@ -17,6 +17,14 @@ $(function(){
     let num = 0; // 이미지 번호
     let width = 800; // 이미지 가로 크기
 
-    $('.slider .sliders')
+    setInterval(function(){
+        num = num + 1;
+        if(num > 2) {
+            num = 0;
+        }
+        console.log(num);
+        $('.slider .sliders')
         .css('transform', `translateX(${-num * width}px)`);
+    }, 3000)
+
 });

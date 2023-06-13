@@ -33,7 +33,7 @@ header {
 
 .main {
     width: 80%;
-    border: 4px solid red;
+    /* border: 4px solid red; */
 }
 
 #main-banner {
@@ -90,15 +90,37 @@ header nav .depth2 {
     width: 100%;
     left: 160px;
     top: 0;
-    display: none;
+    /* display: none; */
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: 0.4s;
 }
 
-/* 마우스가 올라갈때 상태 */
+/* 마우스가 올라갈때 2단계 메뉴 보임 */
 header nav .depth2.active {
-    display: block;
+    /* display: block; */
+    height: 100px;
+    opacity: 1;
 }
 
 /* 메뉴 버튼 트렌지션 효과 */
 header nav a {
     transition-duration: 0.4s;
+}
+
+
+/* slider img */
+.slider {
+    width: 100%;
+    height: 350px;
+    background: #333;
+    /* border: 4px solid blue; */
+}
+
+.slider .sliders{
+    display: flex;
+    /* slider width: 이미지 크기 */
+    transform: translateX(0px);
+    transition: 0.5s;
 }

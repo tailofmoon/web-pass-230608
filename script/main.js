@@ -28,3 +28,27 @@ $(function(){
     }, 3000)
 
 });
+
+
+// tab 버튼
+$(function(){
+    // 공지사항 버튼을 클릭하면 tab-content1 active
+    $('.btn-group a:first-child').click(function(){
+        // 기존 tab-content들의 class 삭제
+        $('.content > div').removeClass('active');
+        $('#tab-content1').addClass('active');
+
+        // 버튼 선택 효과
+        $('.btn-group a').removeClass('active');
+        $('.btn-group a:first-child').addClass('active');
+    })
+    // 갤러리 버튼 클릭하면 tab-content2 active
+    $('.btn-group a:last-child').click(function(){
+        $('.content > div').removeClass('active');
+        $('#tab-content2').addClass('active');
+
+        // 버튼 선택 효과
+        $('.btn-group a').removeClass('active');
+        $('.btn-group a:last-child').addClass('active');
+    })
+})

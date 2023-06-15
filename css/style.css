@@ -134,12 +134,25 @@ header nav a {
 
 #contents > div {
     /* 3단으로 나누기 */
-    width: calc(100% / 3);
+    /* width: calc(100% / 3); */
     border: 2px solid #666;
 }
 
+#contents > .notice {
+    width: 40%;
+    padding: 10px;
+}
+#contents > .banner {
+    width: 30%;
+}
+#contents > .link {
+    width: 30%;
+}
+
+
 #contents .notice .btn-group {
     display: flex;
+    margin-bottom: 20px;
 }
 #contents .notice .btn-group a{
     border: 1px solid #999;
@@ -158,3 +171,13 @@ header nav a {
 #tab-content1.active, #tab-content2.active {
     display: block;
 }
+
+/* 공지사항 목록 */
+#tab-content1 ul li {
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    border-bottom: 1px solid #eee;
+}
+

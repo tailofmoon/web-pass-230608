@@ -52,3 +52,12 @@ $(function(){
         $('.btn-group a:last-child').addClass('active');
     })
 })
+
+
+// 팝업창
+$(function(){
+    $('#tab-content1 ul li:first-child').click(function(){
+        console.log('클릭');
+        $('#popup').addClass('active');
+    })
+});

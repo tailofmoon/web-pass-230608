@@ -49,7 +49,7 @@ header {
 }
 
 footer {
-    background: yellow;
+    background: #eee;
     height: 100px;
 }
 
@@ -239,3 +239,18 @@ header nav .depth1 > li > a{
     padding: 10px;
     display: block;
 }
+/* 팝업 */
+#popup {
+    width: 400px;
+    background: #fff;
+    border: 1px solid #ddd;
+    position: fixed;
+    left: 40%; top: 20%;
+    padding: 40px 20px;
+    box-shadow: 1px 1px 6px rgba(0,0,0, 0.3);
+    display: none;
+}
+
+#popup.active { display: block; }
+
+#popup h2, #popup p { margin-bottom: 1em;}
